@@ -1,25 +1,30 @@
-<h2>Log in</h2>
+
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="container">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, class: 'form-control',placeholder: 'Enter your email' %>
-  </div>
+  <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="container">
-    <%= f.label :password %><br />
-    <%= f.password_field :password , class: 'form-control',placeholder: 'Enter your password'%>
-  </div>
+  <div class="card ">
 
-  <% if devise_mapping.rememberable? %>
-    <div class="container">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+  <h1 class="card-header text-center">Log in</h1> 
+
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, class: 'form-control',placeholder: 'Enter your password' %>
+    
+      <%= f.label :password %><br />
+      <%= f.password_field :password , class: 'form-control',placeholder: 'Enter your password'%>
+
+    <% if devise_mapping.rememberable? %>
+      <div class="form-group">
+        <%= f.check_box :remember_me %>
+        <%= f.label :remember_me %>
+      </div>
+    <% end %>
+
+    <div class="form-group">
+      <%= f.submit "Log in", :class => 'btn btn-primary center-block' %>
     </div>
-  <% end %>
-
-  <div class="actions">
-    <%= f.submit "Log in", :class => 'btn btn-primary center-block' %>
+    
   </div>
 <% end %>
 
