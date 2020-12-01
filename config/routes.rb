@@ -3,7 +3,13 @@ Rails.application.routes.draw do
     as :user do 
       get "signin" => "devise/sessions#new"
       post "signin" => "devise/sessions#create"
+
+      get "signup" => "devise/registrations#new"
+      post "signup" => "devise/registrations#create"
+      
       delete "signout" => "devise/sessions#destroy"
+      get "signout" =>  "devise/sessions#destroy"
+      
     root "static_pages#index"
     devise_for :users
   end

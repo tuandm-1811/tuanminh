@@ -1,2 +1,14 @@
 <h1>Hello World</h1>
-
+<% if user_signed_in? %>
+  <li>
+  <%= link_to('Logout', destroy_user_session_path, method: :delete, :class => 'btn btn-primary') %>   
+    
+  </li>
+<% else %>
+  <li>
+    <%= link_to('Click here to sign in', new_user_session_path,:class => 'btn btn-primary') %>   
+  </li>
+  <li>
+    <%= link_to('Click here to sign up', signup_path,:class => 'btn btn-primary') %>
+  </li>
+<% end %>
