@@ -1,9 +1,24 @@
 <h1>Hello World</h1>
+
 <% if user_signed_in? %>
   <li>
-  <%= link_to('Logout', destroy_user_session_path, method: :delete, :class => 'btn btn-primary') %>   
-    
+  <%= link_to('Logout', destroy_user_session_path, method: :delete, :class => 'btn btn-primary text-center block') %>   
   </li>
+  <div class="form-group">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="contaner">
+        <div class="d-inline-flex p-3 bg-secondary text-white">
+          <h3>
+          
+            <div class="col-sm-4">ID:</div><br />
+            <div class="col-sm-4">Adress:</div><br />
+          </h3>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
 <% else %>
   <li>
     <%= link_to('Click here to sign in', new_user_session_path,:class => 'btn btn-primary') %>   
