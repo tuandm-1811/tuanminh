@@ -4,17 +4,13 @@
   <li>
   <%= link_to('Logout', destroy_user_session_path, method: :delete, :class => 'btn btn-primary text-center block') %>   
   </li>
-  <table  cellpadding="200px", cellspacing="90px">
-    <tr>
-      <td>Hello World</td>
-    </tr>
-    <tr>
-      <td>Hello Me</td>
-    </tr>
-    <tr>
-      <td>Hello You</td>
-    </tr>
-    
+ 
+    <h2>Date and time</h2>
+    <button type="button"
+      onclick="document.getElementById('demo').innerHTML = Date()">
+      Display Date and Time.
+    </button>
+    <p id="demo"></p>
   </table>
 </div>
 <% else %>
