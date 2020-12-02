@@ -12,7 +12,7 @@ class UsersController < ApplicationController
           format.html { redirect_to @email, notice: 'Email was successfully created.' }
           format.json { render :show, status: :created, location: @email }
         else
-          flash[:errors] = "Create Product Failed! "
+          flash[:errors] = "Create Email Failed! "
           format.html { render :new }
           format.json { render json: @email.errors, status: :unprocessable_entity }
         end

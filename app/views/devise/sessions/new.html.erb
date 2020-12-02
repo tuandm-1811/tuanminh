@@ -1,7 +1,6 @@
 
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="container">
   <div class="card ">
@@ -9,10 +8,10 @@
   <h1 class="card-header text-center">Log in</h1> 
 
       <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true, class: 'form-control',placeholder: 'Enter your password' %>
+      <%= f.email_field :email, class: 'form-control',placeholder: 'Enter your password',:required => true %>
     
       <%= f.label :password %><br />
-      <%= f.password_field :password , class: 'form-control',placeholder: 'Enter your password'%>
+      <%= f.password_field :password , class: 'form-control',placeholder: 'Enter your password',:required => true%>
 
     <% if devise_mapping.rememberable? %>
       <div class="form-group">
