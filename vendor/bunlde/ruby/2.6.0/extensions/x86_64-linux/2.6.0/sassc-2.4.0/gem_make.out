@@ -1,11 +1,11 @@
-current directory: /home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/sassc-2.4.0/ext
-/home/clausyy/.rvm/rubies/ruby-2.6.3/bin/ruby -I /home/clausyy/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20201201-44759-n5lzeg.rb extconf.rb
+current directory: /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/sassc-2.4.0/ext
+/home/clausyy/.rvm/rubies/ruby-2.6.3/bin/ruby -I /home/clausyy/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20201204-29489-1b8zj9p.rb extconf.rb
 creating Makefile
 
-current directory: /home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/sassc-2.4.0/ext
+current directory: /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/sassc-2.4.0/ext
 make "DESTDIR=" clean
 
-current directory: /home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/sassc-2.4.0/ext
+current directory: /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/sassc-2.4.0/ext
 make "DESTDIR="
 compiling ./libsass/src/ast.cpp
 compiling ./libsass/src/ast2c.cpp
@@ -75,6 +75,6 @@ compiling ./libsass/src/util_string.cpp
 compiling ./libsass/src/values.cpp
 linking shared-object sassc/libsass.so
 
-current directory: /home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/sassc-2.4.0/ext
+current directory: /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/sassc-2.4.0/ext
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 libsass.so ./.gem.20201201-44759-1lziqm8/sassc
+/usr/bin/install -c -m 0755 libsass.so ./.gem.20201204-29489-1g3ncph/sassc

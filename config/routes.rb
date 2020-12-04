@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :admins
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get 'static_pages/index'
     as :user do 
       get "signin" => "devise/sessions#new"

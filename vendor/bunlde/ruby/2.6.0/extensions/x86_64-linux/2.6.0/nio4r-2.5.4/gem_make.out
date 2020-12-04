@@ -1,5 +1,5 @@
-current directory: /home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/nio4r-2.5.4/ext/nio4r
-/home/clausyy/.rvm/rubies/ruby-2.6.3/bin/ruby -I /home/clausyy/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20201201-44759-dci5ok.rb extconf.rb
+current directory: /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/nio4r-2.5.4/ext/nio4r
+/home/clausyy/.rvm/rubies/ruby-2.6.3/bin/ruby -I /home/clausyy/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20201204-29489-bqkecz.rb extconf.rb
 checking for unistd.h... yes
 checking for linux/aio_abi.h... yes
 checking for sys/select.h... yes
@@ -10,10 +10,10 @@ checking for port_event_t in port.h... no
 checking for sys/resource.h... yes
 creating Makefile
 
-current directory: /home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/nio4r-2.5.4/ext/nio4r
+current directory: /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/nio4r-2.5.4/ext/nio4r
 make "DESTDIR=" clean
 
-current directory: /home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/nio4r-2.5.4/ext/nio4r
+current directory: /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/nio4r-2.5.4/ext/nio4r
 make "DESTDIR="
 compiling bytebuffer.c
 compiling monitor.c
@@ -92,6 +92,6 @@ cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may 
 cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
 linking shared-object nio4r_ext.so
 
-current directory: /home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/nio4r-2.5.4/ext/nio4r
+current directory: /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/nio4r-2.5.4/ext/nio4r
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20201201-44759-1iderss
+/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20201204-29489-ubt9z9

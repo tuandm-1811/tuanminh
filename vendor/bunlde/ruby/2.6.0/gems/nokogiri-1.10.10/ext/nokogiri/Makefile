@@ -31,8 +31,8 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(rubylibprefix)/vendor_ruby
-sitearchdir = $(DESTDIR)./.gem.20201201-44759-1grm98y
-sitelibdir = $(DESTDIR)./.gem.20201201-44759-1grm98y
+sitearchdir = $(DESTDIR)./.gem.20201204-29489-1sadfja
+sitelibdir = $(DESTDIR)./.gem.20201204-29489-1sadfja
 sitedir = $(rubylibprefix)/site_ruby
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
@@ -86,7 +86,7 @@ CCDLFLAGS = -fPIC
 CFLAGS   = $(CCDLFLAGS) $(cflags)  -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
 DEFS     = 
-CPPFLAGS = -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -I/home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxml2/2.9.10/include/libxml2 -I/home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxslt/1.1.34/include -I/home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxml2/2.9.10/include/libxml2  $(DEFS) $(cppflags) "-DNOKOGIRI_LIBXML2_PATH=\"/home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxml2/2.9.10\"" "-DNOKOGIRI_LIBXML2_PATCHES=\"0001-Revert-Do-not-URI-escape-in-server-side-includes.patch 0002-Remove-script-macro-support.patch 0003-Update-entities-to-remove-handling-of-ssi.patch 0004-libxml2.la-is-in-top_builddir.patch 0005-Fix-infinite-loop-in-xmlStringLenDecodeEntities.patch\"" "-DNOKOGIRI_LIBXSLT_PATH=\"/home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxslt/1.1.34\"" "-DNOKOGIRI_LIBXSLT_PATCHES=\"\""
+CPPFLAGS = -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -I/home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxml2/2.9.10/include/libxml2 -I/home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxslt/1.1.34/include -I/home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxml2/2.9.10/include/libxml2  $(DEFS) $(cppflags) "-DNOKOGIRI_LIBXML2_PATH=\"/home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxml2/2.9.10\"" "-DNOKOGIRI_LIBXML2_PATCHES=\"0001-Revert-Do-not-URI-escape-in-server-side-includes.patch 0002-Remove-script-macro-support.patch 0003-Update-entities-to-remove-handling-of-ssi.patch 0004-libxml2.la-is-in-top_builddir.patch 0005-Fix-infinite-loop-in-xmlStringLenDecodeEntities.patch\"" "-DNOKOGIRI_LIBXSLT_PATH=\"/home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxslt/1.1.34\"" "-DNOKOGIRI_LIBXSLT_PATCHES=\"\""
 CXXFLAGS = $(CCDLFLAGS) $(cxxflags) $(ARCH_FLAG)
 ldflags  = -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic
 dldflags = -Wl,--compress-debug-sections=zlib 
@@ -124,8 +124,8 @@ TOUCH = exit >
 #### End of system configuration section. ####
 
 preload = 
-libpath = . $(libdir) /home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxml2/2.9.10/lib /home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxslt/1.1.34/lib
-LIBPATH =  -L. -L$(libdir) -Wl,-rpath,$(libdir) -L/home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxml2/2.9.10/lib -Wl,-rpath,/home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxml2/2.9.10/lib -L/home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxslt/1.1.34/lib -Wl,-rpath,/home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxslt/1.1.34/lib
+libpath = . $(libdir) /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxml2/2.9.10/lib /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxslt/1.1.34/lib
+LIBPATH =  -L. -L$(libdir) -Wl,-rpath,$(libdir) -L/home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxml2/2.9.10/lib -Wl,-rpath,/home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxml2/2.9.10/lib -L/home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxslt/1.1.34/lib -Wl,-rpath,/home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxslt/1.1.34/lib
 DEFFILE = 
 
 CLEANFILES = mkmf.log
@@ -136,7 +136,7 @@ extout =
 extout_prefix = 
 target_prefix = /nokogiri
 LOCAL_LIBS = 
-LIBS = $(LIBRUBYARG_SHARED) /home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxslt/1.1.34/lib/libexslt.a -lm -ldl -lz /home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxml2/2.9.10/lib/libxml2.a /home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxslt/1.1.34/lib/libxslt.a -ldl -lm -lz /home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxml2/2.9.10/lib/libxml2.a -lm   -lc 
+LIBS = $(LIBRUBYARG_SHARED) /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxslt/1.1.34/lib/libexslt.a -lm -ldl -lz /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxml2/2.9.10/lib/libxml2.a /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxslt/1.1.34/lib/libxslt.a -ldl -lm -lz /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/nokogiri-1.10.10/ports/x86_64-pc-linux-gnu/libxml2/2.9.10/lib/libxml2.a -lm   -lc 
 ORIG_SRCS = html_document.c html_element_description.c html_entity_lookup.c html_sax_parser_context.c html_sax_push_parser.c nokogiri.c xml_attr.c xml_attribute_decl.c xml_cdata.c xml_comment.c xml_document.c xml_document_fragment.c xml_dtd.c xml_element_content.c xml_element_decl.c xml_encoding_handler.c xml_entity_decl.c xml_entity_reference.c xml_io.c xml_libxml2_hacks.c xml_namespace.c xml_node.c xml_node_set.c xml_processing_instruction.c xml_reader.c xml_relax_ng.c xml_sax_parser.c xml_sax_parser_context.c xml_sax_push_parser.c xml_schema.c xml_syntax_error.c xml_text.c xml_xpath_context.c xslt_stylesheet.c
 SRCS = $(ORIG_SRCS) 
 OBJS = html_document.o html_element_description.o html_entity_lookup.o html_sax_parser_context.o html_sax_push_parser.o nokogiri.o xml_attr.o xml_attribute_decl.o xml_cdata.o xml_comment.o xml_document.o xml_document_fragment.o xml_dtd.o xml_element_content.o xml_element_decl.o xml_encoding_handler.o xml_entity_decl.o xml_entity_reference.o xml_io.o xml_libxml2_hacks.o xml_namespace.o xml_node.o xml_node_set.o xml_processing_instruction.o xml_reader.o xml_relax_ng.o xml_sax_parser.o xml_sax_parser_context.o xml_sax_push_parser.o xml_schema.o xml_syntax_error.o xml_text.o xml_xpath_context.o xslt_stylesheet.o

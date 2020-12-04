@@ -15,4 +15,4 @@ class SessionsController < ApplicationController
       session[:user_id] = nil
       redirect_to 'signin'
     end
-  end
+end

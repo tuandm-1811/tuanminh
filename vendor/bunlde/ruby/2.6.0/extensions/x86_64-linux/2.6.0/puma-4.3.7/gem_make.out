@@ -1,5 +1,5 @@
-current directory: /home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/puma-4.3.7/ext/puma_http11
-/home/clausyy/.rvm/rubies/ruby-2.6.3/bin/ruby -I /home/clausyy/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20201201-44759-cl8m61.rb extconf.rb
+current directory: /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/puma-4.3.7/ext/puma_http11
+/home/clausyy/.rvm/rubies/ruby-2.6.3/bin/ruby -I /home/clausyy/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20201204-29489-wfv7s3.rb extconf.rb
 checking for BIO_read() in -lcrypto... yes
 checking for SSL_CTX_new() in -lssl... yes
 checking for openssl/bio.h... yes
@@ -8,10 +8,10 @@ checking for TLS_server_method() in openssl/ssl.h... yes
 checking for SSL_CTX_set_min_proto_version in openssl/ssl.h... yes
 creating Makefile
 
-current directory: /home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/puma-4.3.7/ext/puma_http11
+current directory: /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/puma-4.3.7/ext/puma_http11
 make "DESTDIR=" clean
 
-current directory: /home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/puma-4.3.7/ext/puma_http11
+current directory: /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/puma-4.3.7/ext/puma_http11
 make "DESTDIR="
 compiling http11_parser.c
 compiling io_buffer.c
@@ -44,6 +44,6 @@ cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ 
 compiling puma_http11.c
 linking shared-object puma/puma_http11.so
 
-current directory: /home/clausyy/demo/vendor/bunlde/ruby/2.6.0/gems/puma-4.3.7/ext/puma_http11
+current directory: /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/puma-4.3.7/ext/puma_http11
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20201201-44759-1xv6veq/puma
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20201204-29489-1ug5j7n/puma

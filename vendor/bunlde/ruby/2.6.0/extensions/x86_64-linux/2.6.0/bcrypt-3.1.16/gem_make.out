@@ -1,11 +1,11 @@
-current directory: /home/clausyy/tuanminh/vendor/bunlde/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
-/home/clausyy/.rvm/rubies/ruby-2.6.3/bin/ruby -I /home/clausyy/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20201201-76796-1esnm7y.rb extconf.rb
+current directory: /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
+/home/clausyy/.rvm/rubies/ruby-2.6.3/bin/ruby -I /home/clausyy/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20201204-43220-77c7zc.rb extconf.rb
 creating Makefile
 
-current directory: /home/clausyy/tuanminh/vendor/bunlde/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
+current directory: /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
 make "DESTDIR=" clean
 
-current directory: /home/clausyy/tuanminh/vendor/bunlde/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
+current directory: /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
 make "DESTDIR="
 compiling bcrypt_ext.c
 compiling crypt_blowfish.c
@@ -20,6 +20,6 @@ cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may 
 cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
 linking shared-object bcrypt_ext.so
 
-current directory: /home/clausyy/tuanminh/vendor/bunlde/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
+current directory: /home/clausyy/minhtuan/vendor/bunlde/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20201201-76796-1f1rhjl
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20201204-43220-jcf3dt
